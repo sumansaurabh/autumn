@@ -21,6 +21,20 @@ import { JobName } from "@/queue/JobName.js";
 import { addTaskToQueue } from "@/queue/queueUtils.js";
 import { getEntsWithFeature } from "../entitlements/entitlementUtils.js";
 
+/**
+ * Handle the version update for a product and manage associated items and entitlements.
+ *
+ * This function updates the product version, validates product items, and handles the insertion of new products, prices, and entitlements. It also manages free trial updates and initializes the product in Stripe. The function interacts with various services to ensure that all related data is correctly processed and stored.
+ *
+ * @param req - The request object containing the necessary data for processing.
+ * @param res - The response object used to send the response back to the client.
+ * @param latestProduct - The current product details that need to be updated.
+ * @param org - The organization associated with the product.
+ * @param env - The application environment in which the product operates.
+ * @param items - An array of product items to be associated with the new product version.
+ * @param freeTrial - The free trial information to be applied to the product.
+ * @returns A promise that resolves when the product update is complete.
+ */
 export const handleVersionProductV2 = async ({
 	req,
 	res,
