@@ -145,6 +145,23 @@ export const getFreeTrialAfterFingerprint = async ({
 	return uniqueFreeTrial;
 };
 
+/**
+ * Handles the creation or update of a free trial based on the provided parameters.
+ *
+ * The function first checks if the new free trial is null; if so, it deletes the current free trial if it exists and is not custom.
+ * If the new free trial is the same as the current one, it returns the current free trial.
+ * Otherwise, it validates and initializes the new free trial, then either inserts or upserts it based on the flags.
+ * Additionally, it updates the product's default status if the card requirement changes from false to true.
+ *
+ * @param db - The database connection instance.
+ * @param newFreeTrial - The new free trial data to be processed.
+ * @param curFreeTrial - The current free trial data, if any.
+ * @param internalProductId - The internal identifier for the product associated with the free trial.
+ * @param isCustom - A flag indicating if the free trial is custom.
+ * @param product - Optional product data.
+ * @param newVersion - A flag indicating if a new product version is being created.
+ * @returns The created or updated free trial object.
+ */
 export const handleNewFreeTrial = async ({
 	db,
 	newFreeTrial,
