@@ -26,6 +26,18 @@ export type StripeConfig = {
 	success_url?: string;
 };
 
+export type RazorpayConfig = {
+	test_key_id?: string;
+	test_key_secret?: string;
+	live_key_id?: string;
+	live_key_secret?: string;
+	test_webhook_secret?: string;
+	live_webhook_secret?: string;
+
+	sandbox_success_url?: string;
+	success_url?: string;
+};
+
 export type OrgProcessorConfig = {
 	success_url: string;
 };
@@ -51,6 +63,7 @@ export const organizations = pgTable(
 		stripe_connected: boolean("stripe_connected").default(false),
 
 		stripe_config: jsonb("stripe_config").$type<StripeConfig>(),
+		razorpay_config: jsonb("razorpay_config").$type<RazorpayConfig>(),
 		test_pkey: text("test_pkey"),
 		live_pkey: text("live_pkey"),
 		svix_config: jsonb("svix_config")

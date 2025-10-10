@@ -21,6 +21,7 @@ export const ErrCode = {
 	// Stripe
 	StripeKeyInvalid: "stripe_key_invalid",
 	StripeConfigNotFound: "stripe_config_not_found",
+	RazorpayConfigNotFound: "razorpay_config_not_found",
 	StripeDeleteCustomerFailed: "stripe_delete_customer_failed",
 	StripeCreateCustomerFailed: "stripe_create_customer_failed",
 	StripeCreateProductFailed: "stripe_create_product_failed",
