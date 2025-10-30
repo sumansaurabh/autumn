@@ -136,11 +136,3 @@ await track({
 Vous avez intégré un système de facturation complet dans votre application en quelques minutes. Vous pouvez apporter les modifications de modèle de tarification dont vous avez besoin, ou gérer des plans personnalisés sans avoir besoin de modifier votre base de code.
 
 N'hésitez pas à auto-héberger Autumn, ou à utiliser notre version hébergée sur https://useautumn.com. Et faites-nous part de vos questions, réflexions ou commentaires à hey@useautumn.com. -->
-
-## Contributeurs
-
-Merci à tous nos contributeurs pour avoir aidé à faire d'Autumn un meilleur produit !
-
-<a href="https://github.com/useautumn/autumn/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=useautumn/autumn" />
-</a>
