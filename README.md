@@ -1,5 +1,7 @@
 # Autumn
 
+[English](README.md) | [हिन्दी](README.hi.md)
+
 ![Autumn](assets/github_hero.png)
 
 [![Discord](https://img.shields.io/badge/Join%20Community-5865F2?logo=discord&logoColor=white)](https://discord.gg/53emPtY9tA)
