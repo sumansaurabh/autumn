@@ -41,6 +41,8 @@ bun db:generate && bun db:migrate
 
 5. Autumn चलाएं:
 
+Docker Compose के साथ:
+
 Windows के लिए
 ```bash
 docker compose -f docker-compose.dev.yml up
@@ -49,6 +51,12 @@ docker compose -f docker-compose.dev.yml up
 Mac/Linux के लिए:
 ```bash
 docker compose -f docker-compose.unix.yml up
+```
+
+या सीधे Docker के साथ:
+```bash
+docker build -t autumn .
+docker run -p 3000:3000 autumn
 ```
 
 बस इतना ही! आप `http://localhost:3000` पर Autumn डैशबोर्ड देख सकेंगे।
@@ -128,14 +136,6 @@ await track({
 **योगदान** 🤝: यदि आप योगदान करने में रुचि रखते हैं, तो आप हमारी गाइड [यहां](/.github/CONTRIBUTING.md) देख सकते हैं। सभी प्रकार की मदद की सराहना की जाती है :)
 
 **सपोर्ट** 💬: यदि आपको किसी भी प्रकार के सपोर्ट की आवश्यकता है, तो हम आमतौर पर अपने [Discord चैनल](https://discord.gg/STqxY92zuS) पर सबसे अधिक रिस्पॉन्सिव होते हैं, लेकिन हमें `hey@useautumn.com` पर ईमेल करने में भी संकोच न करें!
-
-
-
-<!-- ## बधाई हो!
-
-आपने कुछ ही मिनटों में अपने एप्लिकेशन में एक पूर्ण बिलिंग सिस्टम एम्बेड कर लिया है। आप कोई भी प्राइसिंग मॉडल परिवर्तन कर सकते हैं जिसकी आपको आवश्यकता है, या अपने कोडबेस को बदले बिना कस्टम प्लान हैंडल कर सकते हैं।
-
-Autumn को सेल्फ-होस्ट करने के लिए स्वतंत्र महसूस करें, या https://useautumn.com पर हमारे होस्टेड वर्जन का उपयोग करें। और हमें hey@useautumn.com पर कोई भी प्रश्न, विचार या फीडबैक बताएं। -->
 
 ## योगदानकर्ता
 
