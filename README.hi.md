@@ -7,7 +7,6 @@
 [![Y Combinator](https://img.shields.io/badge/Y%20Combinator-F24-orange)](https://www.ycombinator.com/companies/autumn)
 [![Cloud](https://img.shields.io/badge/Cloud-☁️-blue)](https://app.useautumn.com)
 [![Documentation](https://img.shields.io/badge/Documentation-📕-blue)](https://docs.useautumn.com)
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/useautumn/autumn)
 
 [Autumn](https://useautumn.com) एक ओपन-सोर्स लेयर है जो Stripe और आपके एप्लिकेशन के बीच काम करती है, जिससे आप कोई भी प्राइसिंग मॉडल बना सकते हैं और इसे कुछ लाइनों के कोड से एम्बेड कर सकते हैं। Autumn पर आप निम्नलिखित बना सकते हैं:
 - सब्सक्रिप्शन
