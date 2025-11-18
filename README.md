@@ -1,5 +1,7 @@
 # Autumn
 
+*Read this in other languages: [日本語](README.ja.md)*
+
 ![Autumn](assets/github_hero.png)
 
 [![Discord](https://img.shields.io/badge/Join%20Community-5865F2?logo=discord&logoColor=white)](https://discord.gg/53emPtY9tA)
